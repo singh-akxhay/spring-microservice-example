@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: contacts-service
+
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+
+  datasource:
+    driverClassName: org.h2.Driver
+    url: jdbc:h2:mem:contacts-db
+    username: test
+    password: test@1234
+
+server:
+  port: 8082
